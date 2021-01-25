@@ -1,6 +1,6 @@
 "use strict";
 
-const { src, dest, parallel, series } = require("gulp"),
+const { src, dest, parallel, series, watch } = require("gulp"),
     autoprefixer = require("gulp-autoprefixer"),
     cssbeautify = require("gulp-cssbeautify"),
     removeComments = require('gulp-strip-css-comments'),
@@ -249,7 +249,7 @@ function watchFiles() {
 }
 
 const build = series(clean, parallel(html, css, js, images, fonts));
-const watch = parallel(build, watchFiles, serve);
+const watching = parallel(build, watchFiles, serve);
 
 
 
@@ -262,5 +262,5 @@ exports.images = images;
 exports.fonts = fonts;
 exports.clean = clean;
 exports.build = build;
-exports.watch = watch;
-exports.default = watch;
+exports.watching = watching;
+exports.default = watching;
