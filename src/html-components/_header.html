@@ -1,6 +1,60 @@
 <header>
     <nav class="nav">
+        <div class="nav__logo">
+            <img class="nav__logo-img" src="../assets/images/logo.png" alt="Logotip">
+        </div>
+        <div class="nav__town">
+            <span class="nav__town-text">Москва</span>
+            <svg class="nav__town-svg">
+                <use xlink:href="#arrow-down"></use>
+            </svg>
+        </div>
         <ul class="nav__list">
+            <li class="nav__list-item"><a href="" class="nav__link">Адреса аптек </a></li>
+            <li class="nav__list-item"><a href="" class="nav__link">Доставка</a></li>
+            <li class="nav__list-item"><a href="" class="nav__link">О нас</a></li>
+            <li class="nav__list-item"><a href="" class="nav__link">Акции</a></li>
         </ul>
+        <div class="nav__version">
+            <span class="nav__version-text">Версия для слабовидящих</span>
+            <svg class="nav__version-svg">
+                <use xlink:href="#eye-ball"></use>
+            </svg>
+        </div>
+        <div class="nav__phone">8 800 707 77 33</div>
     </nav>
+    <div class="catalog">
+        <button class="catalog__button">
+            <svg class="catalog__button-svg">
+                <use xlink:href="#catalog-btn"></use>
+            </svg>
+            Каталог товаров
+        </button>
+        <div class="catalog__search">
+            <input type="text">
+            <button class="catalog__search-btn">
+                <svg class="catalog__search-svg">
+                    <use xlink:href="#search-btn"></use>
+                </svg>
+            </button>
+        </div>
+        <div class="catalog__profile">
+            <svg class="catalog__profile-svg">
+                <use xlink:href="#user"></use>
+            </svg>
+            <span class="catalog__profile-name">Константин</span>
+            <span class="catalog__profile-info">Ваш профиль</span>
+        </div>
+        <div class="catalog__favorite">
+            <svg class="catalog__favorite-svg">
+                <use xlink:href="#star"></use>
+            </svg>
+        </div>
+        <div class="catalog__cart">
+            <svg class="catalog__cart-svg">
+                <use xlink:href="#cart"></use>
+            </svg>
+            <span class="catalog__cart-number">10</span>
+        </div>
+    </div>
 </header>

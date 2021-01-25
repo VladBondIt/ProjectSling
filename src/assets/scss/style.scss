@@ -1,12 +1,10 @@
 @import "mixins/mixins.scss";
+@import "variables/variables.scss";
 
 @import "fonts/fonts.scss";
 @import "nullstyle/nullstyle.scss";
 
-@import "test/test.scss";
+@import "header/header.scss";
 
 body {
-    background-color: black;
-    font-size: 21px;
-    color: white;
 }
