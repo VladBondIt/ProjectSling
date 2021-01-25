@@ -1,0 +1,12 @@
+@import "mixins/mixins.scss";
+
+@import "fonts/fonts.scss";
+@import "nullstyle/nullstyle.scss";
+
+@import "test/test.scss";
+
+body {
+    background-color: black;
+    font-size: 21px;
+    color: white;
+}
