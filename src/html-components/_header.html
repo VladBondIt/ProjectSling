@@ -1,60 +1,604 @@
 <header>
-    <nav class="nav">
-        <div class="nav__logo">
-            <img class="nav__logo-img" src="../assets/images/logo.png" alt="Logotip">
-        </div>
-        <div class="nav__town">
-            <span class="nav__town-text">Москва</span>
-            <svg class="nav__town-svg">
-                <use xlink:href="#arrow-down"></use>
-            </svg>
-        </div>
-        <ul class="nav__list">
-            <li class="nav__list-item"><a href="" class="nav__link">Адреса аптек </a></li>
-            <li class="nav__list-item"><a href="" class="nav__link">Доставка</a></li>
-            <li class="nav__list-item"><a href="" class="nav__link">О нас</a></li>
-            <li class="nav__list-item"><a href="" class="nav__link">Акции</a></li>
-        </ul>
-        <div class="nav__version">
-            <span class="nav__version-text">Версия для слабовидящих</span>
-            <svg class="nav__version-svg">
-                <use xlink:href="#eye-ball"></use>
-            </svg>
-        </div>
-        <div class="nav__phone">8 800 707 77 33</div>
-    </nav>
-    <div class="catalog">
-        <button class="catalog__button">
-            <svg class="catalog__button-svg">
-                <use xlink:href="#catalog-btn"></use>
-            </svg>
-            Каталог товаров
-        </button>
-        <div class="catalog__search">
-            <input type="text">
-            <button class="catalog__search-btn">
-                <svg class="catalog__search-svg">
-                    <use xlink:href="#search-btn"></use>
+    <div class="container">
+        <nav class="nav">
+            <div class="nav__logo">
+                <img class="nav__logo-img" src="../assets/images/logo.png" alt="Logotip">
+            </div>
+            <div class="nav__town">
+                <p class="nav__town-text">Москва</p>
+                <svg class="nav__town-svg">
+                    <use xlink:href="#arrow-down"></use>
                 </svg>
+            </div>
+            <ul class="nav__list">
+                <li class="nav__list-item"><a href="" class="nav__link">Адреса аптек </a></li>
+                <li class="nav__list-item"><a href="" class="nav__link">Доставка</a></li>
+                <li class="nav__list-item"><a href="" class="nav__link">О нас</a></li>
+                <li class="nav__list-item"><a href="" class="nav__link">Акции</a></li>
+            </ul>
+            <div class="nav__version">
+                <span class="nav__version-text">Версия для слабовидящих</span>
+                <svg class="nav__version-svg">
+                    <use xlink:href="#eye-ball"></use>
+                </svg>
+            </div>
+            <a href="tel:+78007077733" class="nav__phone">8 800 707 77 33</a>
+        </nav>
+        <div class="catalog">
+            <button class="catalog__button">
+                <svg class="catalog__button-svg">
+                    <use xlink:href="#catalog-btn"></use>
+                </svg>
+                Каталог товаров
             </button>
-        </div>
-        <div class="catalog__profile">
-            <svg class="catalog__profile-svg">
-                <use xlink:href="#user"></use>
-            </svg>
-            <span class="catalog__profile-name">Константин</span>
-            <span class="catalog__profile-info">Ваш профиль</span>
-        </div>
-        <div class="catalog__favorite">
-            <svg class="catalog__favorite-svg">
-                <use xlink:href="#star"></use>
-            </svg>
-        </div>
-        <div class="catalog__cart">
-            <svg class="catalog__cart-svg">
-                <use xlink:href="#cart"></use>
-            </svg>
-            <span class="catalog__cart-number">10</span>
+            <div class="catalog__search">
+                <input type="text" name="text" placeholder="Средство,  действующее вещество, проблема">
+                <button class="catalog__search-btn">
+                    <svg class="catalog__search-svg">
+                        <use xlink:href="#search-btn"></use>
+                    </svg>
+                </button>
+            </div>
+            <div class="catalog__profile">
+                <svg class="catalog__profile-svg">
+                    <use xlink:href="#user"></use>
+                </svg>
+                <div class="catalog__profile-box">
+                    <span class="catalog__profile-name">Константин</span>
+                    <span class="catalog__profile-info">Ваш профиль</span>
+                </div>
+            </div>
+            <div class="catalog__favorite">
+                <svg class="catalog__favorite-svg">
+                    <use xlink:href="#star"></use>
+                </svg>
+            </div>
+            <div class="catalog__cart">
+                <svg class="catalog__cart-svg">
+                    <use xlink:href="#cart"></use>
+                </svg>
+                <span class="catalog__cart-number">10</span>
+            </div>
+            <div class="catalog__menu menu">
+                <nav class="menu__tabs">
+                    <button class="menu__tabs-item active">категории</button>
+                    <button class="menu__tabs-item">бренд</button>
+                </nav>
+                <ul class="menu__list list list_category">
+                    <li class="list__item">
+                        <img class="list__item-img" src="../assets/images/heart.png" alt="Иконка Аптечные товары">
+                        <span class="list__item-text">Аптечные товары</span>
+                        <svg class="list__item-arrow">
+                            <use xlink:href="#menu-arrow"></use>
+                        </svg>
+                        <ul class="hovered">
+                            <li class="hovered__item">
+                                <a href="" class="hovered__link">Косметические средства с лечебным эффектом</a>
+                            </li>
+                            <li class="hovered__item">
+                                <a href="" class="hovered__link">Косметические средства с лечебным эффектом</a>
+                            </li>
+                            <li class="hovered__item">
+                                <a href="" class="hovered__link">Косметические средства с лечебным эффектом</a>
+                            </li>
+                            <li class="hovered__item">
+                                <a href="" class="hovered__link">Косметические средства с лечебным эффектом</a>
+                            </li>
+                            <li class="hovered__item">
+                                <a href="" class="hovered__link">Косметические средства с лечебным эффектом</a>
+                            </li>
+                            <li class="hovered__item">
+                                <a href="" class="hovered__link">Косметические средства с лечебным эффектом</a>
+                            </li>
+                            <li class="hovered__item">
+                                <a href="" class="hovered__link">Косметические средства с лечебным эффектом</a>
+                            </li>
+                            <li class="hovered__item">
+                                <a href="" class="hovered__link">Косметические средства с лечебным эффектом</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="list__item">
+                        <img class="list__item-img" src="../assets/images/cosmetic.png" alt="Иконка Косметика">
+                        <span class="list__item-text">Косметика</span>
+                        <svg class="list__item-arrow">
+                            <use xlink:href="#menu-arrow"></use>
+                        </svg>
+                        <ul class="hovered">
+                            <li class="hovered__item">
+                                <a href="" class="hovered__link">Косметические средства с лечебным эффектом</a>
+                            </li>
+                            <li class="hovered__item">
+                                <a href="" class="hovered__link">Косметические средства с лечебным эффектом</a>
+                            </li>
+                            <li class="hovered__item">
+                                <a href="" class="hovered__link">Косметические средства с лечебным эффектом</a>
+                            </li>
+                            <li class="hovered__item">
+                                <a href="" class="hovered__link">Косметические средства с лечебным эффектом</a>
+                            </li>
+                            <li class="hovered__item">
+                                <a href="" class="hovered__link">Косметические средства с лечебным эффектом</a>
+                            </li>
+                            <li class="hovered__item">
+                                <a href="" class="hovered__link">Косметические средства с лечебным эффектом</a>
+                            </li>
+                            <li class="hovered__item">
+                                <a href="" class="hovered__link">Косметические средства с лечебным эффектом</a>
+                            </li>
+                            <li class="hovered__item">
+                                <a href="" class="hovered__link">Косметические средства с лечебным эффектом</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="list__item">
+                        <img class="list__item-img" src="../assets/images/health.png" alt="Иконка Здоровое питание">
+                        <span class="list__item-text">Здоровое питание</span>
+                        <svg class="list__item-arrow">
+                            <use xlink:href="#menu-arrow"></use>
+                        </svg>
+                        <ul class="hovered">
+                            <li class="hovered__item">
+                                <a href="" class="hovered__link">Косметические средства с лечебным эффектом</a>
+                            </li>
+                            <li class="hovered__item">
+                                <a href="" class="hovered__link">Косметические средства с лечебным эффектом</a>
+                            </li>
+                            <li class="hovered__item">
+                                <a href="" class="hovered__link">Косметические средства с лечебным эффектом</a>
+                            </li>
+                            <li class="hovered__item">
+                                <a href="" class="hovered__link">Косметические средства с лечебным эффектом</a>
+                            </li>
+                            <li class="hovered__item">
+                                <a href="" class="hovered__link">Косметические средства с лечебным эффектом</a>
+                            </li>
+                            <li class="hovered__item">
+                                <a href="" class="hovered__link">Косметические средства с лечебным эффектом</a>
+                            </li>
+                            <li class="hovered__item">
+                                <a href="" class="hovered__link">Косметические средства с лечебным эффектом</a>
+                            </li>
+                            <li class="hovered__item">
+                                <a href="" class="hovered__link">Косметические средства с лечебным эффектом</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="list__item">
+                        <img class="list__item-img" src="../assets/images/home.png" alt="Иконка Для дома и семьи">
+                        <span class="list__item-text">Для дома и семьи</span>
+                        <svg class="list__item-arrow">
+                            <use xlink:href="#menu-arrow"></use>
+                        </svg>
+                        <ul class="hovered">
+                            <li class="hovered__item">
+                                <a href="" class="hovered__link">Косметические средства с лечебным эффектом</a>
+                            </li>
+                            <li class="hovered__item">
+                                <a href="" class="hovered__link">Косметические средства с лечебным эффектом</a>
+                            </li>
+                            <li class="hovered__item">
+                                <a href="" class="hovered__link">Косметические средства с лечебным эффектом</a>
+                            </li>
+                            <li class="hovered__item">
+                                <a href="" class="hovered__link">Косметические средства с лечебным эффектом</a>
+                            </li>
+                            <li class="hovered__item">
+                                <a href="" class="hovered__link">Косметические средства с лечебным эффектом</a>
+                            </li>
+                            <li class="hovered__item">
+                                <a href="" class="hovered__link">Косметические средства с лечебным эффектом</a>
+                            </li>
+                            <li class="hovered__item">
+                                <a href="" class="hovered__link">Косметические средства с лечебным эффектом</a>
+                            </li>
+                            <li class="hovered__item">
+                                <a href="" class="hovered__link">Косметические средства с лечебным эффектом</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="list__item">
+                        <img class="list__item-img" src="../assets/images/kids.png" alt="Иконка Мама и малыш">
+                        <span class="list__item-text">Мама и малыш</span>
+                        <svg class="list__item-arrow">
+                            <use xlink:href="#menu-arrow"></use>
+                        </svg>
+                        <ul class="hovered">
+                            <li class="hovered__item">
+                                <a href="" class="hovered__link">Косметические средства с лечебным эффектом</a>
+                            </li>
+                            <li class="hovered__item">
+                                <a href="" class="hovered__link">Косметические средства с лечебным эффектом</a>
+                            </li>
+                            <li class="hovered__item">
+                                <a href="" class="hovered__link">Косметические средства с лечебным эффектом</a>
+                            </li>
+                            <li class="hovered__item">
+                                <a href="" class="hovered__link">Косметические средства с лечебным эффектом</a>
+                            </li>
+                            <li class="hovered__item">
+                                <a href="" class="hovered__link">Косметические средства с лечебным эффектом</a>
+                            </li>
+                            <li class="hovered__item">
+                                <a href="" class="hovered__link">Косметические средства с лечебным эффектом</a>
+                            </li>
+                            <li class="hovered__item">
+                                <a href="" class="hovered__link">Косметические средства с лечебным эффектом</a>
+                            </li>
+                            <li class="hovered__item">
+                                <a href="" class="hovered__link">Косметические средства с лечебным эффектом</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="list__item">
+                        <img class="list__item-img" src="../assets/images/glass.png" alt="Иконка Оптика">
+                        <span class="list__item-text">Оптика</span>
+                        <svg class="list__item-arrow">
+                            <use xlink:href="#menu-arrow"></use>
+                        </svg>
+                        <ul class="hovered">
+                            <li class="hovered__item">
+                                <a href="" class="hovered__link">Косметические средства с лечебным эффектом</a>
+                            </li>
+                            <li class="hovered__item">
+                                <a href="" class="hovered__link">Косметические средства с лечебным эффектом</a>
+                            </li>
+                            <li class="hovered__item">
+                                <a href="" class="hovered__link">Косметические средства с лечебным эффектом</a>
+                            </li>
+                            <li class="hovered__item">
+                                <a href="" class="hovered__link">Косметические средства с лечебным эффектом</a>
+                            </li>
+                            <li class="hovered__item">
+                                <a href="" class="hovered__link">Косметические средства с лечебным эффектом</a>
+                            </li>
+                            <li class="hovered__item">
+                                <a href="" class="hovered__link">Косметические средства с лечебным эффектом</a>
+                            </li>
+                            <li class="hovered__item">
+                                <a href="" class="hovered__link">Косметические средства с лечебным эффектом</a>
+                            </li>
+                            <li class="hovered__item">
+                                <a href="" class="hovered__link">Косметические средства с лечебным эффектом</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="list__item">
+                        <img class="list__item-img" src="../assets/images/medical.png" alt="Иконка Медицинские приборы">
+                        <span class="list__item-text">Медицинские приборы</span>
+                        <svg class="list__item-arrow">
+                            <use xlink:href="#menu-arrow"></use>
+                        </svg>
+                        <ul class="hovered">
+                            <li class="hovered__item">
+                                <a href="" class="hovered__link">Косметические средства с лечебным эффектом</a>
+                            </li>
+                            <li class="hovered__item">
+                                <a href="" class="hovered__link">Косметические средства с лечебным эффектом</a>
+                            </li>
+                            <li class="hovered__item">
+                                <a href="" class="hovered__link">Косметические средства с лечебным эффектом</a>
+                            </li>
+                            <li class="hovered__item">
+                                <a href="" class="hovered__link">Косметические средства с лечебным эффектом</a>
+                            </li>
+                            <li class="hovered__item">
+                                <a href="" class="hovered__link">Косметические средства с лечебным эффектом</a>
+                            </li>
+                            <li class="hovered__item">
+                                <a href="" class="hovered__link">Косметические средства с лечебным эффектом</a>
+                            </li>
+                            <li class="hovered__item">
+                                <a href="" class="hovered__link">Косметические средства с лечебным эффектом</a>
+                            </li>
+                            <li class="hovered__item">
+                                <a href="" class="hovered__link">Косметические средства с лечебным эффектом</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="list__item">
+                        <img class="list__item-img" src="../assets/images/promo.png" alt="Иконка Скидки">
+                        <span class="list__item-text">Скидки</span>
+                        <svg class="list__item-arrow">
+                            <use xlink:href="#menu-arrow"></use>
+                        </svg>
+                        <ul class="hovered">
+                            <li class="hovered__item">
+                                <a href="" class="hovered__link">Косметические средства с лечебным эффектом</a>
+                            </li>
+                            <li class="hovered__item">
+                                <a href="" class="hovered__link">Косметические средства с лечебным эффектом</a>
+                            </li>
+                            <li class="hovered__item">
+                                <a href="" class="hovered__link">Косметические средства с лечебным эффектом</a>
+                            </li>
+                            <li class="hovered__item">
+                                <a href="" class="hovered__link">Косметические средства с лечебным эффектом</a>
+                            </li>
+                            <li class="hovered__item">
+                                <a href="" class="hovered__link">Косметические средства с лечебным эффектом</a>
+                            </li>
+                            <li class="hovered__item">
+                                <a href="" class="hovered__link">Косметические средства с лечебным эффектом</a>
+                            </li>
+                            <li class="hovered__item">
+                                <a href="" class="hovered__link">Косметические средства с лечебным эффектом</a>
+                            </li>
+                            <li class="hovered__item">
+                                <a href="" class="hovered__link">Косметические средства с лечебным эффектом</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+                <ul class="menu__list list list_brand">
+                    <li class="list__item">
+                        <img class="list__item-img" src="../assets/images/heart.png" alt="Иконка Аптечные товары">
+                        <span class="list__item-text">Аптечные товары</span>
+                        <svg class="list__item-arrow">
+                            <use xlink:href="#menu-arrow"></use>
+                        </svg>
+                        <ul class="hovered">
+                            <li class="hovered__item">
+                                <a href="" class="hovered__link">Косметические средства с лечебным эффектом</a>
+                            </li>
+                            <li class="hovered__item">
+                                <a href="" class="hovered__link">Косметические средства с лечебным эффектом</a>
+                            </li>
+                            <li class="hovered__item">
+                                <a href="" class="hovered__link">Косметические средства с лечебным эффектом</a>
+                            </li>
+                            <li class="hovered__item">
+                                <a href="" class="hovered__link">Косметические средства с лечебным эффектом</a>
+                            </li>
+                            <li class="hovered__item">
+                                <a href="" class="hovered__link">Косметические средства с лечебным эффектом</a>
+                            </li>
+                            <li class="hovered__item">
+                                <a href="" class="hovered__link">Косметические средства с лечебным эффектом</a>
+                            </li>
+                            <li class="hovered__item">
+                                <a href="" class="hovered__link">Косметические средства с лечебным эффектом</a>
+                            </li>
+                            <li class="hovered__item">
+                                <a href="" class="hovered__link">Косметические средства с лечебным эффектом</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="list__item">
+                        <img class="list__item-img" src="../assets/images/cosmetic.png" alt="Иконка Косметика">
+                        <span class="list__item-text">Косметика</span>
+                        <svg class="list__item-arrow">
+                            <use xlink:href="#menu-arrow"></use>
+                        </svg>
+                        <ul class="hovered">
+                            <li class="hovered__item">
+                                <a href="" class="hovered__link">Косметические средства с лечебным эффектом</a>
+                            </li>
+                            <li class="hovered__item">
+                                <a href="" class="hovered__link">Косметические средства с лечебным эффектом</a>
+                            </li>
+                            <li class="hovered__item">
+                                <a href="" class="hovered__link">Косметические средства с лечебным эффектом</a>
+                            </li>
+                            <li class="hovered__item">
+                                <a href="" class="hovered__link">Косметические средства с лечебным эффектом</a>
+                            </li>
+                            <li class="hovered__item">
+                                <a href="" class="hovered__link">Косметические средства с лечебным эффектом</a>
+                            </li>
+                            <li class="hovered__item">
+                                <a href="" class="hovered__link">Косметические средства с лечебным эффектом</a>
+                            </li>
+                            <li class="hovered__item">
+                                <a href="" class="hovered__link">Косметические средства с лечебным эффектом</a>
+                            </li>
+                            <li class="hovered__item">
+                                <a href="" class="hovered__link">Косметические средства с лечебным эффектом</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="list__item">
+                        <img class="list__item-img" src="../assets/images/health.png" alt="Иконка Здоровое питание">
+                        <span class="list__item-text">Здоровое питание</span>
+                        <svg class="list__item-arrow">
+                            <use xlink:href="#menu-arrow"></use>
+                        </svg>
+                        <ul class="hovered">
+                            <li class="hovered__item">
+                                <a href="" class="hovered__link">Косметические средства с лечебным эффектом</a>
+                            </li>
+                            <li class="hovered__item">
+                                <a href="" class="hovered__link">Косметические средства с лечебным эффектом</a>
+                            </li>
+                            <li class="hovered__item">
+                                <a href="" class="hovered__link">Косметические средства с лечебным эффектом</a>
+                            </li>
+                            <li class="hovered__item">
+                                <a href="" class="hovered__link">Косметические средства с лечебным эффектом</a>
+                            </li>
+                            <li class="hovered__item">
+                                <a href="" class="hovered__link">Косметические средства с лечебным эффектом</a>
+                            </li>
+                            <li class="hovered__item">
+                                <a href="" class="hovered__link">Косметические средства с лечебным эффектом</a>
+                            </li>
+                            <li class="hovered__item">
+                                <a href="" class="hovered__link">Косметические средства с лечебным эффектом</a>
+                            </li>
+                            <li class="hovered__item">
+                                <a href="" class="hovered__link">Косметические средства с лечебным эффектом</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="list__item">
+                        <img class="list__item-img" src="../assets/images/home.png" alt="Иконка Для дома и семьи">
+                        <span class="list__item-text">Для дома и семьи</span>
+                        <svg class="list__item-arrow">
+                            <use xlink:href="#menu-arrow"></use>
+                        </svg>
+                        <ul class="hovered">
+                            <li class="hovered__item">
+                                <a href="" class="hovered__link">Косметические средства с лечебным эффектом</a>
+                            </li>
+                            <li class="hovered__item">
+                                <a href="" class="hovered__link">Косметические средства с лечебным эффектом</a>
+                            </li>
+                            <li class="hovered__item">
+                                <a href="" class="hovered__link">Косметические средства с лечебным эффектом</a>
+                            </li>
+                            <li class="hovered__item">
+                                <a href="" class="hovered__link">Косметические средства с лечебным эффектом</a>
+                            </li>
+                            <li class="hovered__item">
+                                <a href="" class="hovered__link">Косметические средства с лечебным эффектом</a>
+                            </li>
+                            <li class="hovered__item">
+                                <a href="" class="hovered__link">Косметические средства с лечебным эффектом</a>
+                            </li>
+                            <li class="hovered__item">
+                                <a href="" class="hovered__link">Косметические средства с лечебным эффектом</a>
+                            </li>
+                            <li class="hovered__item">
+                                <a href="" class="hovered__link">Косметические средства с лечебным эффектом</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="list__item">
+                        <img class="list__item-img" src="../assets/images/kids.png" alt="Иконка Мама и малыш">
+                        <span class="list__item-text">Мама и малыш</span>
+                        <svg class="list__item-arrow">
+                            <use xlink:href="#menu-arrow"></use>
+                        </svg>
+                        <ul class="hovered">
+                            <li class="hovered__item">
+                                <a href="" class="hovered__link">Косметические средства с лечебным эффектом</a>
+                            </li>
+                            <li class="hovered__item">
+                                <a href="" class="hovered__link">Косметические средства с лечебным эффектом</a>
+                            </li>
+                            <li class="hovered__item">
+                                <a href="" class="hovered__link">Косметические средства с лечебным эффектом</a>
+                            </li>
+                            <li class="hovered__item">
+                                <a href="" class="hovered__link">Косметические средства с лечебным эффектом</a>
+                            </li>
+                            <li class="hovered__item">
+                                <a href="" class="hovered__link">Косметические средства с лечебным эффектом</a>
+                            </li>
+                            <li class="hovered__item">
+                                <a href="" class="hovered__link">Косметические средства с лечебным эффектом</a>
+                            </li>
+                            <li class="hovered__item">
+                                <a href="" class="hovered__link">Косметические средства с лечебным эффектом</a>
+                            </li>
+                            <li class="hovered__item">
+                                <a href="" class="hovered__link">Косметические средства с лечебным эффектом</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="list__item">
+                        <img class="list__item-img" src="../assets/images/glass.png" alt="Иконка Оптика">
+                        <span class="list__item-text">Оптика</span>
+                        <svg class="list__item-arrow">
+                            <use xlink:href="#menu-arrow"></use>
+                        </svg>
+                        <ul class="hovered">
+                            <li class="hovered__item">
+                                <a href="" class="hovered__link">Косметические средства с лечебным эффектом</a>
+                            </li>
+                            <li class="hovered__item">
+                                <a href="" class="hovered__link">Косметические средства с лечебным эффектом</a>
+                            </li>
+                            <li class="hovered__item">
+                                <a href="" class="hovered__link">Косметические средства с лечебным эффектом</a>
+                            </li>
+                            <li class="hovered__item">
+                                <a href="" class="hovered__link">Косметические средства с лечебным эффектом</a>
+                            </li>
+                            <li class="hovered__item">
+                                <a href="" class="hovered__link">Косметические средства с лечебным эффектом</a>
+                            </li>
+                            <li class="hovered__item">
+                                <a href="" class="hovered__link">Косметические средства с лечебным эффектом</a>
+                            </li>
+                            <li class="hovered__item">
+                                <a href="" class="hovered__link">Косметические средства с лечебным эффектом</a>
+                            </li>
+                            <li class="hovered__item">
+                                <a href="" class="hovered__link">Косметические средства с лечебным эффектом</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="list__item">
+                        <img class="list__item-img" src="../assets/images/medical.png" alt="Иконка Медицинские приборы">
+                        <span class="list__item-text">Медицинские приборы</span>
+                        <svg class="list__item-arrow">
+                            <use xlink:href="#menu-arrow"></use>
+                        </svg>
+                        <ul class="hovered">
+                            <li class="hovered__item">
+                                <a href="" class="hovered__link">Косметические средства с лечебным эффектом</a>
+                            </li>
+                            <li class="hovered__item">
+                                <a href="" class="hovered__link">Косметические средства с лечебным эффектом</a>
+                            </li>
+                            <li class="hovered__item">
+                                <a href="" class="hovered__link">Косметические средства с лечебным эффектом</a>
+                            </li>
+                            <li class="hovered__item">
+                                <a href="" class="hovered__link">Косметические средства с лечебным эффектом</a>
+                            </li>
+                            <li class="hovered__item">
+                                <a href="" class="hovered__link">Косметические средства с лечебным эффектом</a>
+                            </li>
+                            <li class="hovered__item">
+                                <a href="" class="hovered__link">Косметические средства с лечебным эффектом</a>
+                            </li>
+                            <li class="hovered__item">
+                                <a href="" class="hovered__link">Косметические средства с лечебным эффектом</a>
+                            </li>
+                            <li class="hovered__item">
+                                <a href="" class="hovered__link">Косметические средства с лечебным эффектом</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="list__item">
+                        <img class="list__item-img" src="../assets/images/promo.png" alt="Иконка Скидки">
+                        <span class="list__item-text">Скидки</span>
+                        <svg class="list__item-arrow">
+                            <use xlink:href="#menu-arrow"></use>
+                        </svg>
+                        <ul class="hovered">
+                            <li class="hovered__item">
+                                <a href="" class="hovered__link">Косметические средства с лечебным эффектом</a>
+                            </li>
+                            <li class="hovered__item">
+                                <a href="" class="hovered__link">Косметические средства с лечебным эффектом</a>
+                            </li>
+                            <li class="hovered__item">
+                                <a href="" class="hovered__link">Косметические средства с лечебным эффектом</a>
+                            </li>
+                            <li class="hovered__item">
+                                <a href="" class="hovered__link">Косметические средства с лечебным эффектом</a>
+                            </li>
+                            <li class="hovered__item">
+                                <a href="" class="hovered__link">Косметические средства с лечебным эффектом</a>
+                            </li>
+                            <li class="hovered__item">
+                                <a href="" class="hovered__link">Косметические средства с лечебным эффектом</a>
+                            </li>
+                            <li class="hovered__item">
+                                <a href="" class="hovered__link">Косметические средства с лечебным эффектом</a>
+                            </li>
+                            <li class="hovered__item">
+                                <a href="" class="hovered__link">Косметические средства с лечебным эффектом</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
         </div>
     </div>
+    <div class="zaglushka"></div>
+
 </header>

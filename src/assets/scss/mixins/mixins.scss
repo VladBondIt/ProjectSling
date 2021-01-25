@@ -13,7 +13,7 @@
 
 // !! АДАПТИВНЫЙ ШРИФТ
 // Миксин для шрифтов
-$maxWidth: 1280;
+$maxWidth: 1200;
 @mixin adaptiv-font($pcSize, $mobSize) {
     $addSize: $pcSize - $mobSize;
     $maxWidth: $maxWidth - 320;

@@ -7,4 +7,11 @@
 @import "header/header.scss";
 
 body {
+    font-family: "PT Sans";
+    color: #4a4a4a;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
 }
